@@ -14,11 +14,6 @@ app.use(bodyParser.json());
 
 let comments = [];
 
-app.post('/comments', (req, res) => {
-    const comment = req.body.comment;
-    comments.push(comment);
-    res.send('Comment added');
-});
 
 app.get('/comments', (req, res) => {
     res.json(comments);
