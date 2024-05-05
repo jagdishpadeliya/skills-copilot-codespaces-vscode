@@ -15,10 +15,6 @@ app.use(bodyParser.json());
 let comments = [];
 
 
-app.get('/comments', (req, res) => {
-    res.json(comments);
-});
-
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
